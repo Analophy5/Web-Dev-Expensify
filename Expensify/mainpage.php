@@ -7,12 +7,12 @@
     <link href="https://fonts.googleapis.com/css2?family=Oleo+Script&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
     <title>Main Page</title>
-    <link rel="stylesheet" href="mainpage.css">
+    <link rel="stylesheet" href="css/mainpage.css">
 </head>
 <body>
     <div class="container">
         <div class="img">
-            <img src="image1.jpg" alt="image1">
+            <img src="images/goldcoins.jpg" alt="coins">
         </div>
         <div class="bio">
             <div class="appname">

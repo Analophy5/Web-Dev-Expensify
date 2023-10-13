@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <link rel="stylesheet" type="text/css" href="login.css">
+    <link rel="stylesheet" type="text/css" href="css/login.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
   <title>Login Form</title>
 </head>
@@ -10,8 +10,8 @@
     <h2>Login</h2>
     <h4>Hello, Welcome Back!</h4>
     <form>
-      <input type="text" id="username" name="username" placeholder="Username" required>
-      <input type="password" id="password" name="password" placeholder="Password" required>
+      <input type="text" id="username" name="username" placeholder="Username" autocomplete="off" required>
+      <input type="password" id="password" name="password" placeholder="Password" autocomplete="off" required>
       <button id = "bttn" type="submit">Login</button>
     </form>
     <form action="login_process.php" method="post">

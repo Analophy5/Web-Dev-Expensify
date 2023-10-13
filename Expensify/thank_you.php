@@ -2,7 +2,7 @@
 <html>
 <head>
     <title>Thank You</title>
-    <link rel="stylesheet" type="text/css" href="thank_you.css">
+    <link rel="stylesheet" type="text/css" href="css/thank_you.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
 </head>
 <body>

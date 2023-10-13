@@ -1,15 +1,23 @@
 <?php
-if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    $username = $_POST["username"];
-    $password = $_POST["password"];
+// Saving account records to the database
+$con = mysqli_connect('localhost','root','','registered_accounts');
 
-    
-    $registrationSuccessful = true;
-    if ($registrationSuccessful) {
-        header("Location: thank_you.php");
-        exit;
-    } else {
-        echo "Registration failed. Please try again.";
-    }
+$email = $_POST['email'];
+$username = $_POST['username'];
+$password = $_POST['password'];
+
+$sql = "INSERT INTO `users` (`email`, `username`, `password`) VALUES ('$email', '$username', '$password')";
+
+$rs = mysqli_query($con, $sql);
+
+if($rs)
+{
+    // Redirecting to the thank_you.php page
+    header("Location: thank_you.php");
+    exit;
+}
+else
+{
+    echo "Registration failed. Please try again.";
 }
 ?>
